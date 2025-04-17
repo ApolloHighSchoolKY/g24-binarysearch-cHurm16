@@ -5,7 +5,7 @@ public class BinarySearch
 	public static int binarySearch(int[] ray, int item)
 	{
 		//return -1 if it is not there 
-		int start = ray[0];
+		int start = 0;
 		int end= ray.length-1;
 		
 
