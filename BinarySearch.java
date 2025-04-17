@@ -5,7 +5,7 @@ public class BinarySearch
 	public static int binarySearch(int[] ray, int item)
 	{
 		//return -1 if it is not there 
-		int start = 0;
+		int start = ray[0];
 		int end= ray.length-1;
 		
 
@@ -15,10 +15,10 @@ public class BinarySearch
 
 			int mid = start+((end-start)/2);
 
-			if(<ray[mid]){
+			if(item<ray[mid]){
 				end = mid-1;
 			}
-			else if (>ray[mid]){
+			else if (item>ray[mid]){
 				start = mid+1;
 			}
 			else {
